@@ -1,9 +1,12 @@
 package com.messageEncryption;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class DataWriter {
 
@@ -16,10 +19,18 @@ public class DataWriter {
 			writer.flush();
 			writer.close();
 			System.out.println("Done!");
+			System.out.println("Your converted text is: " + stuff);
 
 		} catch (IOException e) {
 			e.printStackTrace();
+			
+			
 		}
 	}
-
 }
+
+
+		
+
+
+
